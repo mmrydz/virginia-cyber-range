@@ -3,7 +3,7 @@
 
 Screenshot of Code:
 -------------------
-![alt text](vcr-screenshot.JPG)
+![alt text](vcr-screenshot.png)
 
 Gif of Authentication:
 ----------------------
