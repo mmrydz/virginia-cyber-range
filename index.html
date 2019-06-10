@@ -1,0 +1,34 @@
+<html>
+<body><div align="center" margin="auto">
+  <form id = "input">
+    Simple Equation:<input type="text">
+  </form>
+  <p id = "result"><p>
+<button onclick="calculate()">Get Answer</button></div>
+<script>
+function getInput(tag){
+  return document.getElementById(tag)
+}
+
+function httpGet(theUrl){
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open( "GET", theUrl, false );
+
+  xmlHttp.send( null );
+  return xmlHttp.responseText;
+}
+function calculate(){
+  var input = getInput("input")[0].value
+
+  console.log(input)
+  var theUrl = "https://s7mrsry00m.execute-api.us-east-1.amazonaws.com/default/firstFunction/" + input
+  console.log(theUrl)
+  var response = httpGet(theUrl)
+  console.log(response)
+  document.getElementById("result").innerHTML = response;
+
+}
+
+</script>
+</body>
+</html>
