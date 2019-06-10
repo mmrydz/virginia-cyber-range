@@ -1,0 +1,107 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Forum</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row card mt-5">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <h3>Ask a Question</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="question-input">Question</label>
+                        <input class="form-control" id="question-input"
+                            placeholder="Ask a question..."></input>
+                        <small id="questionHelp" class="form-text text-muted">Enter the question you have.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="question-input">Body</label>
+                        <textarea class="form-control" id="question-input" rows="2"
+                            placeholder="Add some details..."></textarea>
+                        <small id="questionHelp" class="form-text text-muted">Explain your question in more detail if applicable.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="category-input">Category</label>
+                        <select class="form-control" id="category-input">
+                            <option value="Announcements">Announcements</option>
+                            <option value="Networking Discussions">Networking Discussions</option>
+                            <option value="Linux/Windows Discussions">Linux/Windows Discussions</option>
+                            <option value="CTF Discussions">CTF Discussions</option>
+                            <option value="Courseware Discussions">Courseware Discussions</option>
+                            <option value="The Breakroom">The Breakroom</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary" onclick="calculate()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- 
+
+    <div align="center" margin="auto">
+        <form id="input">
+            Simple Equation:<input type="text">
+        </form>
+        <p id="result">
+            <p>
+                <button onclick="calculate()">Get Answer</button>
+    </div> -->
+
+
+
+
+
+    <!-- <script>
+        function getInput(tag) {
+            return document.getElementById(tag)
+        }
+
+        function httpGet(theUrl) {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.open("GET", theUrl, false);
+
+            xmlHttp.send(null);
+            return xmlHttp.responseText;
+        }
+        function calculate() {
+            var input = getInput("input")[0].value
+
+            console.log(input)
+            var theUrl = "https://s7mrsry00m.execute-api.us-east-1.amazonaws.com/default/firstFunction/" + input
+            console.log(theUrl)
+            var response = httpGet(theUrl)
+            console.log(response)
+            document.getElementById("result").innerHTML = response;
+
+        }
+
+    </script> -->
+</body>
+
+</html>
