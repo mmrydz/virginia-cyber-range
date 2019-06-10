@@ -1,6 +1,14 @@
 # virginia-cyber-range - Group 13's submission at the AWS Hackathon for Good 2019 in Washington, DC.
 ![alt text](vcr.JPG)
 
+Screenshot of Code:
+-------------------
+![alt text](vcr-screenshot.JPG)
+
+Gif of Authentication:
+----------------------
+![alt text](authentication.gif)
+
 Problem Addressed by This App:
 ------------------------------
 * VCR wants teacher to teacher online forum that students can not access 
