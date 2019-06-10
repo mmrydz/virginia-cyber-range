@@ -7,7 +7,7 @@ Screenshot of Code:
 
 Gif of Authentication:
 ----------------------
-![alt text](authentication.gif)
+![](Cognito.gif)
 
 Problem Addressed by This App:
 ------------------------------
