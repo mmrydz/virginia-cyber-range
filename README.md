@@ -11,7 +11,7 @@ Gif of Authentication:
 
 Problem Addressed by This App:
 ------------------------------
-* VCR wants teacher to teacher online forum that students can not access 
+* Virginia Cyber Range wants teacher to teacher online forum that students can not access 
 * Difficult to maintain server(full) platform such as phpBB
 * Difficult to maintain a curated knowledge base
 
